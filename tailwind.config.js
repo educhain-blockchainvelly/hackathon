@@ -7,6 +7,7 @@ module.exports = {
         purple: {
           500: "#B759D7", // SyncFi 보라색
           600: "#A340C4", // 호버 상태용 진한 보라색
+          700: "#BD58D1" // social
         },
       },
     },
