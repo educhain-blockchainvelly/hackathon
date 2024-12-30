@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 echo "# SyncFi
 
 ## 초기 설정 방법
@@ -74,3 +75,6 @@ git push origin [본인_브랜치명]
 |------|-----------|
 | Frontend | React, TypeScript, Tailwind CSS |
 | Blockchain | Hardhat, Ethers.js |" > README.md
+=======
+# hackathon
+>>>>>>> origin/develop
