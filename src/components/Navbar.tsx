@@ -1,7 +1,14 @@
+// Navbar.tsx
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { ethers } from 'ethers';
 
-const Navbar = () => {
+interface NavbarProps {
+    address: string | null;
+    onConnect: () => Promise<void>;
+}
+
+const Navbar = ({ address, onConnect }: NavbarProps) => {
     const location = useLocation();
 
     const isActive = (path: string) => {
@@ -24,7 +31,7 @@ const Navbar = () => {
                         </Link>
                     </div>
 
-                    {/* Navigation Links */}
+
                     <div className="flex space-x-8">
                         <Link to="/dashboard" className={`inline-flex items-center px-1 pt-1 text-sm font-medium ${isActive('/dashboard')}`}>
                             DASHBOARD
@@ -43,11 +50,20 @@ const Navbar = () => {
                         </Link>
                     </div>
 
-                    {/* Sign In Button */}
+
                     <div className="flex items-center">
-                        <button className="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition-colors">
-                            Sign In
-                        </button>
+                        {!address ? (
+                            <button
+                                onClick={onConnect}
+                                className="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition-colors"
+                            >
+                                Sign in
+                            </button>
+                        ) : (
+                            <button className="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition-colors">
+                                {`${address.slice(0, 6)}...${address.slice(-4)}`}
+                            </button>
+                        )}
                     </div>
                 </div>
             </div>
