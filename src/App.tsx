@@ -6,6 +6,7 @@ import PoolPage from './pages/PoolPage';
 import SwapPage from './pages/SwapPage';
 import DashboardPage from './pages/DashboardPage';
 import SocialPage from './pages/SocialPage';
+import LeaderboardPage from './pages/LeaderboardPage';
 
 function App() {
     return (
@@ -18,7 +19,7 @@ function App() {
                     <Route path="/swap" element={<SwapPage />} />
                     <Route path="/pool" element={<PoolPage />} />
                     <Route path="/social" element={<SocialPage />} />
-                    <Route path="/leaderboard" element={<SocialPage />} />
+                    <Route path="/leaderboard" element={<LeaderboardPage />} />
                 </Routes>
             </div>
         </Router>
