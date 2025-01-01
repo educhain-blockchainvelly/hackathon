@@ -6,8 +6,8 @@ import Navbar from './components/Navbar';
 import MainPage from './pages/MainPage';
 import PoolPage from './pages/PoolPage';
 import SwapPage from './pages/SwapPage';
-import DashboardPage from './pages/DashboardPage';
 import SocialPage from './pages/SocialPage';
+import LeaderboardPage from './pages/LeaderboardPage';
 
 
 declare global {
@@ -47,18 +47,17 @@ function App() {
 
     return (
         <Router>
-            <div className="min-h-screen bg-gray-50">
+            <div className="min-h-screen bg-gradient-to-br from-indigo-500 to-purple-300">
                 <Navbar address={address} onConnect={connectWallet} />
                 <Routes>
                     <Route path="/" element={<MainPage />} />
-                    <Route path="/dashboard" element={<DashboardPage />} />
                     <Route
                         path="/swap"
                         element={<SwapPage address={address} onConnect={connectWallet} />}
                     />
                     <Route path="/pool" element={<PoolPage />} />
                     <Route path="/social" element={<SocialPage />} />
-                    <Route path="/leaderboard" element={<SocialPage />} />
+                    <Route path="/leaderboard" element={<LeaderboardPage />} />
                 </Routes>
             </div>
         </Router>

@@ -105,7 +105,7 @@ const SwapPage: React.FC<SwapPageProps> = ({ address, onConnect }) => {
 
     return (
         <div className="flex justify-center items-center min-h-screen container mx-auto p-4">
-            <div className="w-full max-w-xl h-[850px] bg-purple-100 rounded-3xl p-10">
+            <div className="w-full max-w-xl h-[850px] bg-white rounded-3xl p-10">
 
                 <div className="flex justify-between items-center mb-8">
                     <h2 className="text-2xl font-semibold">Swap</h2>

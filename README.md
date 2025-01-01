@@ -1,80 +1,127 @@
-<<<<<<< HEAD
-echo "# SyncFi
+# SyncFi 🌟
 
-## 초기 설정 방법
+> Social DeFi protocol that makes staking more fun and rewarding with friends
 
-1. **리포지토리 클론**
-\`\`\`bash
-git clone https://github.com/educhain-blockchainvelly/hackathon.git
-cd hackathon
-\`\`\`
+## Overview
 
-2. **의존성 설치**
-\`\`\`bash
+SyncFi is an innovative group staking platform that combines DeFi protocols with social elements. Stake with friends, communicate, and share rewards together.
+
+## Vision
+
+SyncFi goes beyond a simple DeFi protocol, presenting a new paradigm where education meets finance. Our goals are:
+
+1. **Educational Value** - Financial education through quizzes and learning activities
+2. **Community-Centric** - A social platform for learning and growing together
+3. **Reward System** - Fair compensation for learning and participation
+4. **Scalability** - Community-driven development through DAO
+
+### Key Development Points
+
+#### Current Implementation
+
+- Friend invitation and group creation functionality
+- Joint staking pool smart contracts
+- Automatic reward distribution mechanism
+
+#### Future Development
+
+- Implementation of learning-based NFT rewards
+- Development of team-specific DAO structure
+- Integration of educational quizzes and assessments
+- Enhanced social features and community tools
+
+### Why SyncFi?
+
+- **Learn Together**: Share knowledge and strategies with your staking group
+- **Earn Together**: Maximize rewards through collaborative staking
+- **Grow Together**: Build lasting relationships within the DeFi community
+
+## Core Features 🚀
+
+### Social Staking
+
+- Invite friends and create staking groups
+- Real-time group chat and activity sharing
+- Transparent automatic reward distribution system
+
+### Smart Contracts
+
+- Secure joint staking pool management
+- Smart contract-based automatic reward distribution
+- Group reward optimization mechanism
+
+### Community
+
+- Real-time group activity ranking
+- Weekly/monthly leaderboard
+- Community-based governance
+
+## Future Roadmap 🗺️
+
+### Phase 1: Core Platform
+
+- [] Basic staking functionality
+- [] Group creation and management
+- [] Reward distribution system
+
+### Phase 2: Social Enhancement
+
+- [ ] Token economy introduction
+- [ ] Daily quest system
+- [ ] Weekly quiz events
+
+### Phase 3: Advanced Features
+
+- [ ] NFT reward system
+- [ ] Learning team DAO
+- [ ] Open class funding
+
+## Technical Architecture 🛠️
+
+### Smart Contract Stack
+
+- Solidity
+- Hardhat
+- Ethers.js
+
+### Frontend Stack
+
+- React
+- TypeScript
+- Tailwind CSS
+
+### Integration
+
+- Metamask wallet connection
+- Arbitrum network support
+- USDT ⟷ EDU/ARB swap
+
+## Token Economy 💰
+
+### Initial Distribution
+
+- Allocation by team composition:
+- Team A: $500
+- Team B: $500
+- Team C: $500
+- Team D: $500
+
+### Reward Structure
+
+- 1st Place: 50% bonus
+- 2nd Place: 30% bonus
+- 3rd Place: 20% bonus
+- 4th Place: 10% bonus
+
+## Getting Started 🚀
+
+```bash
+# Install dependencies
 npm install
-\`\`\`
 
-3. **본인 담당 브랜치로 전환**
-\`\`\`bash
-git checkout page/[본인_브랜치명]
-# 예: git checkout page/main-subin
-\`\`\`
+# Run development server
+npm run dev
 
-4. **개발 서버 실행**
-\`\`\`bash
-npm start
-\`\`\`
-
-## 브랜치 담당자
-| 브랜치 | 담당 페이지 | 담당자 |
-|--------|------------|---------|
-| page/main-subin | 메인 페이지 | 수빈 |
-| page/pool-junmo | 유동성 풀 페이지 | 준모 |
-| page/swap-sungwoo | 스왑 페이지 | 성우 |
-| page/dashboard-sungjin | 대시보드 | 성진 |
-| page/social-minsu | 랭킹, 소셜 페이지 | 민수 |
-
-## 개발 규칙
-
-### 1. 브랜치 관리
-- 항상 본인의 브랜치에서만 작업
-- 작업 전 최신 코드 받기:
-\`\`\`bash
-git pull origin main
-\`\`\`
-
-### 2. 커밋 컨벤션
-| 타입 | 설명 |
-|------|------|
-| feat | 새로운 기능 추가 |
-| fix | 버그 수정 |
-| docs | 문서 수정 |
-| style | 코드 포맷팅 |
-| refactor | 코드 리팩토링 |
-
-### 3. 작업 완료 후 Push
-\`\`\`bash
-git add .
-git commit -m \"feat: 작업내용\"
-git push origin [본인_브랜치명]
-\`\`\`
-
-### 4. Pull Request
-- GitHub에서 Pull Request 생성
-- PR 제목은 커밋 컨벤션과 동일하게 작성
-- PR 내용에는 변경사항 상세히 기술
-
-## 주의사항
-- node_modules는 절대 커밋하지 않기
-- 공통 컴포넌트는 src/components에 추가
-- 각자 페이지는 src/pages 아래에 개발
-- 문제가 생기면 즉시 팀원들과 공유
-
-## 기술 스택
-| 분야 | 사용 기술 |
-|------|-----------|
-| Frontend | React, TypeScript, Tailwind CSS |
-| Blockchain | Hardhat, Ethers.js |" > README.md
-=======
-# hackathon
->>>>>>> origin/develop
+# Build for production
+npm run build
+```
